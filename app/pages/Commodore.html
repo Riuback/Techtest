@@ -1,0 +1,38 @@
+<div class="jumbotron text-center">
+	<h1>{{datos[1].name}}</h1>
+	<img src="pages/images/commodore-logo.jpg">
+	<p>{{datos[1].desc}}</p>
+	
+	</div>
+	<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading text-center"><h1>List of items</h1></div>
+
+  <!-- Table -->
+ 
+	
+	<table st-table="rowCollection" class="table jumbotron">
+	<thead>
+	<tr>
+		<th></th>
+		<th name="Id">Id</th>
+		<th  name="IdBrand">IdBrand</th>
+		<th  name="Name">Name</th>
+		
+		
+	</tr>
+	</thead>
+	
+	<tr ng-repeat="row in rowCollection">
+		<td></td>
+		<td >{{row.id}}</td>
+		<td >{{row.idbrand}}</td>
+		<td > {{row.name }}</td>
+		<td cs-select="row"></td>
+		
+	</tr>
+	
+</table>
+	
+	</div>
+	

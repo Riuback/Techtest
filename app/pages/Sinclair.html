@@ -1,0 +1,34 @@
+<div class="jumbotron text-center">
+<h1>{{datos[0].name}}</h1>
+	<img src='pages/images/sinclair.jpg'>
+<p>{{datos[0].desc}}</p>
+
+
+	</div>
+	
+		<table st-table="rowCollection" class="table jumbotron">
+	<thead>
+	<tr>
+		<th></th>
+		<th st-sort="firstName">Id</th>
+		<th st-sort="lastName">IdBrand</th>
+		<th st-sort="birthDate">Name</th>
+		
+		
+	</tr>
+	</thead>
+	<tbody>
+	<tr ng-repeat="row in rowCollection">
+	
+		<td></td>
+		<td>{{row.id}}</td>
+		<td>{{row.idbrand}}</td>
+		<td>{{row.name }}</td>
+		<td cs-select="row"></td>
+		
+	</tr>
+	</tbody>
+</table>
+	
+	
+	

@@ -1,0 +1,33 @@
+<div class="jumbotron text-center">
+	<h1>{{datos[2].name}}</h1>
+<img src="pages/images/Amstrad_logo.png">
+<p>{{datos[2].desc}}</p>
+	
+	
+	</div>
+	
+	<table st-table="rowCollection" class="table jumbotron">
+	<thead>
+	<tr>
+		<th></th>
+		<th st-sort="firstName">Id</th>
+		<th st-sort="lastName">IdBrand</th>
+		<th st-sort="birthDate">Name</th>
+		
+		
+	</tr>
+	</thead>
+	<tbody>
+	<tr ng-repeat="row in rowCollection">
+	<td></td>
+		
+		<td>{{row.id}}</td>
+		<td>{{row.idbrand}}</td>
+		<td>{{row.name }}</td>
+		<td cs-select="row"></td>
+		
+	</tr>
+	</tbody>
+</table>
+	
+	
